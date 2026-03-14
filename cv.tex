@@ -1,148 +1,99 @@
-\documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage{hyperref}
-    \usepackage[T1]{fontenc}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
-    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
-
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
-
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-}
-
-\newcommand{\contact} [3] {
-    \vspace*{20pt}
-    \begin{center}
-        {\Huge \textbf{#1}}\\
-        \vspace{5pt}
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
-
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=0.7in,right=0.7in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
 \usepackage{xcolor}
-\definecolor{cvblue}{RGB}{0, 50, 140} % Professional Navy
-
 \usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,     % Keep internal page links black
-    urlcolor=cvblue,      % Make external evidence links blue
-    pdfborder={0 0 0}
-}
+\definecolor{cvblue}{RGB}{0,50,140}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=cvblue,pdfborder={0 0 0}}
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=14pt,topsep=3pt,itemsep=1pt,parsep=0pt}
 
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\header}[1]{\vfill{\large\textsc{#1}}\\[-8pt]\rule{\linewidth}{0.4pt}\\[2pt]}
 
 \begin{document}
-\vspace*{-40pt}
 
 %==== Profile ====%
-\vspace*{-10pt}
 \begin{center}
-    {\Huge \textbf{Muhammed Answar C K}}\\
-    \vspace{8pt}
-    Kochi, India $\cdot$ answarc764@gmail.com $\cdot$ \href{https://www.linkedin.com/in/answarck/}{LinkedIn} $\cdot$ \href{https://github.com/answarck/}{GitHub} \\
-    \vspace{6pt}
-    Reverse Engineer $\cdot$ OpenSource Contributer $\cdot$ Computer Science and Engineering
+    {\Huge \textbf{Muhammed Answar C K}}\\[6pt]
+    Kochi, India $\cdot$ answarc764@gmail.com $\cdot$ \href{https://www.linkedin.com/in/answarck/}{LinkedIn} $\cdot$ \href{https://github.com/answarck/}{GitHub}\\[4pt]
+    Reverse Engineer $\cdot$ Open Source Contributor $\cdot$ Computer Science and Engineering
 \end{center}
-\vspace*{-8pt}
 
 %==== Education ====%
-\vspace*{8mm}
 \header{Education}
 \textbf{\href{https://www.cusat.ac.in/}{Cochin University of Science \& Technology (CUSAT)}} \hfill Kerala, 2024 -- 2028\\
-\textit{B.Tech in Computer Science \& Engineering} \hfill CGPA: 9.02 \\
-% \textbf{Major Coursework:} Network Theory, Microprocessors \& Microcontrollers (8086, 8051), C programming \& Object-Oriented Programming (C++), Linear Algebra \& Transform Techniques, Numerical \& Statistical Methods, Calculus.
-\vspace*{4mm}
-\textbf{\href{https://www.keralastateboard.org/}{VPKMMHSSS Puthur Pallikkal}} \hfill Kerala, 2021 -- 2023\\
-\textit{Higher Secondary Education, Mathematics and Biology} \hfill Grade: 97.0\%\\
-\vspace{6mm}
-
+\textit{B.Tech in Computer Science \& Engineering} \hfill CGPA: 8.84
 
 %==== Experience ====%
 \header{Experience}
-\textbf{Open Source Contributor} \hfill \\
-\textit{\href{https://rizin.re/}{Rizin}} \hfill
+\textbf{Software Developer \& Reverse Engineer}, \textit{\href{https://latelogic.com/}{Latelogic}} \hfill \textit{Feb 2026 -- Present, Kozhikode}
 \begin{itemize}
-    \item Contributed to the \textbf{Rizin} reverse engineering framework.
-    \item Implemented efficient and memory-safe components in \textbf{C}.
-    \item Resolved multiple issues and improved code reliability.
+    \item Reversed multiple anti-bot systems, including \textbf{Akamai}, and built reliable scraping systems.
+    \item Reverse engineer web and mobile applications and develop software solutions for production use.
+    \item Analyze obfuscated code and protocols to build reliable integrations and internal tooling.
 \end{itemize}
-
-
-\textbf{Software Developer Intern} \hfill \textit{May 2025 - Present} \\
-\textit{\href{https://lascade.com/}{Lascade}} \hfill \textit{Kozhikode, India}
+\vspace{3pt}
+\textbf{Software Developer Intern}, \textit{\href{https://lascade.com/}{Lascade}} \hfill \textit{May 2025 -- Feb 2026, Kozhikode}
 \begin{itemize}
-\item Developed backend components, internal tools, and web scraping systems for production environments.
-\item Implemented API logic, handled data processing, and improved service reliability.
-\item Worked with existing codebases to debug issues, optimize functionality, and maintain system stability.
-\item Collaborated with the development team to ship features and resolve production issues in a fast-paced environment.
-
+    \item Built backend components, internal tools, and web scraping systems for production.
+    \item Implemented API logic and data processing; debugged and optimized existing codebases to improve reliability.
+    \item Collaborated with the team to ship features and resolve production issues in a fast-paced environment.
 \end{itemize}
-
-\textbf{Mentor} \hfill \textit{Jan 2025 -- Present} \\
-\textit{\href{https://eocsoce.cusat.ac.in/}{SOCE \& EOC}} \hfill \textit{Kochi, India}
+\vspace{3pt}
+\textbf{Open Source Contributor}, \textit{\href{https://rizin.re/}{Rizin}} \hfill \textit{3.9k+ GitHub stars} $\cdot$ \href{https://github.com/rizinorg/rizin/pulls?q=is:pr+author:answarck+is:merged}{Merged PRs}
 \begin{itemize}
-    \item Supported students in technical development and project-related activities.
-    \item Managed the SOCE \& EOC stall during \textbf{KnowledgeFest}.
-    \item Maintained and managed multiple websites of \textbf{CUSAT}.
+    \item Contributed memory-safe \textbf{C} components and bug fixes to the Rizin reverse engineering framework.
+    \item Resolved multiple issues and improved overall code reliability.
 \end{itemize}
-
-\textbf{Security Researcher} \hfill \\
+\vspace{3pt}
+\textbf{Mentor}, \textit{\href{https://eocsoce.cusat.ac.in/}{SOCE \& EOC}} \hfill \textit{Jan 2025 -- Present, Kochi}
+\begin{itemize}
+    \item Guided students on technical projects and supported their technical development.
+\end{itemize}
+\vspace{3pt}
+\textbf{Security Researcher}
 \begin{itemize}
     \item Discovered and responsibly disclosed multiple vulnerabilities to private organizations.
     \item Identified and reported security flaws in critical government web platforms.
 \end{itemize}
-\vspace*{4mm}
 
-%==== Featured Projects ====%
-{\hspace*{-18pt}\vspace*{6pt} \textsc{Featured Projects} \hfill \href{https://github.com/answarck}{github.com/answarck}}
-\vspace*{-6pt} \lineunder
-\href{https://github.com/answarck/akamai-v3-sensor-decryptor}{\textbf{Reverse Engineered Akamai Bot Detection}} \hfill \textit{Dec 2025 - Present}\\
-{\sl Babel, Node, Go}
+%==== Projects ====%
+\header{Featured Projects}
+\href{https://github.com/answarck/akamai-v3-deobfuscator}{\textbf{Akamai v3 Deobfuscator}} \& \href{https://github.com/answarck/akamai-v3-sensor-decryptor}{\textbf{Sensor Decryptor}} -- {\sl Babel, Node, Go}
 \begin{itemize}
-    \item Reverse engineered an advanced Akamai bot detection system and used \textbf{Babel} to deobfuscate the JavaScript code.
-    \item Analyzed and understood techniques used to bypass advanced VM-based JavaScript obfuscation.
-    \item Reimplemented the telemetry data encryption and decryption algorithms through reverse engineering.
+    \item Built a \textbf{Babel} AST pipeline to deobfuscate Akamai's sensor script and analyze its bot detection.
+    \item Reversed control-flow flattening, stub functions, encoded arrays, and runtime-generated values.
+    \item Defeated advanced VM-based JavaScript obfuscation and recovered the underlying program logic.
+    \item Reimplemented its telemetry encryption in \textbf{Go} to decrypt captured sensor payloads.
 \end{itemize}
-\vspace*{2mm}
-\textbf{\href{https://github.com/answarck/NeuralNetwork_from_scratch_cpp}{Neural Network Implementation in C++}} \hfill \\
-{\sl C++, CMake}
-\begin{itemize} \itemsep 1pt
-    \item Implemented feed forward neural network in C++ without any libraries.
+\vspace{3pt}
+\href{https://github.com/answarck/http-server-rust}{\textbf{HTTP Server in Rust}} -- {\sl Rust, Docker, Caddy}
+\begin{itemize}
+    \item Built an HTTP/1.1 server from scratch on raw TCP sockets using only the \textbf{Rust} standard library.
+    \item Implemented request parsing, validation, header handling, a function-pointer router, and redirects.
+    \item Containerized with a multi-stage Docker build and deployed behind a Caddy TLS reverse proxy.
 \end{itemize}
-\vspace*{2mm}
-
-\href{https://sargam.cusat.ac.in/}{\textbf{Backend of Sargam Webapp}} \hfill \textit{Mar 2025 - Apr 2025}\\
-{\sl Python, Django, Docker, Nginx}
-\begin{itemize} \itemsep 1pt
-    \item Developed the backend for the Sargam web application used by students of Cochin University to access real-time result updates.
-    \item Designed and implemented a secure, robust authentication system resistant to common attack vectors.
+\vspace{3pt}
+\href{https://github.com/answarck/NeuralNetwork_from_scratch_cpp}{\textbf{Neural Network in C++}} -- {\sl C++, CMake}
+\begin{itemize}
+    \item Implemented a feed-forward neural network from scratch with no external libraries.
 \end{itemize}
-\vspace*{6mm}
+\vspace{3pt}
+\textbf{CUSAT University Websites} -- {\sl Django, HTML, CSS, JavaScript, Bootstrap, Nginx}
+\begin{itemize}
+    \item Maintained multiple live \textbf{CUSAT} department and event websites: \href{https://sif.cusat.ac.in}{sif.cusat.ac.in}, \href{https://cbs.cusat.ac.in}{cbs.cusat.ac.in}, \href{https://sargam.cusat.ac.in}{sargam.cusat.ac.in}, and \href{https://fyugp.cusat.ac.in}{fyugp.cusat.ac.in}.
+\end{itemize}
 
-
+%==== Skills ====%
 \header{Technical Skills}
-\begin{itemize} \itemsep 1pt
-    \item \textbf{Languages:} Proficient in \textbf{C/C++}, \textbf{Python} (Playwright, Pwntools, Requests, Selenium), HTML/CSS, JavaScript, Bash, SQL, Go, Assembly.
-    \item \textbf{Pentesting:} Web application security testing, mobile application pentesting, native binary analysis, return-oriented programming, automation of attack workflows, and reverse engineering of binaries and obfuscated JavaScript.
-    \item \textbf{Tools \& Frameworks:} \textbf{Babel}, \textbf{SDL}, \textbf{GDB}, \textbf{Valgrind}, Reverse engineering frameworks like \textbf{Ghidra}, \textbf{Jadx}, \textbf{Frida}.
-    \item \textbf{Linux \& DevOps:} \textbf{Git} workflow; Daily-driving \textbf{Linux} user for over 7 years, working across \textbf{Arch} (current), Ubuntu, Fedora, Manjaro, and other distributions, with experience in virtual machine management.
-    \end{itemize}
+\begin{itemize}
+    \item \textbf{Languages:} C/C++, Go, Python (Django, Playwright, Pwntools, Selenium), Java, JavaScript, Bash, SQL, Assembly.
+    \item \textbf{Security:} Web \& mobile pentesting, binary analysis, ROP, reverse engineering of binaries and obfuscated JS.
+    \item \textbf{Tools:} Ghidra, Jadx, Frida, GDB, Valgrind, Babel, Oxc (Rust), SDL, Git.
+\end{itemize}
+\vfill
 \end{document}
-
